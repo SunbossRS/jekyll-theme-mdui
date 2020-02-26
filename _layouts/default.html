@@ -5,22 +5,22 @@ layout: compress
 <html lang="{{site.data.site.lang}}">
     {% include head.html %}
     <body>
-        {% include component/totop.html %}
-        {% include header/header.html %}
+        {% include components/totop.html %}
+        {% include header.html %}
         <div class="mdui-container container">
             <section class="content">
                 {{ content }}
             </section>
         </div>
-        {% if site.data.site.google_analytics != "" %}
-        {% include analytics/google.html %}
+        {% if site.google_analytics != "" %}
+        {% include components/google.html %}
         {% endif %}
-        {% if site.data.site.baidu_auto_push == true %}
-        {% include submission/baidu.html %}
+        {% if site.baidu_auto_push == true %}
+        {% include components/baidu.html %}
         {% endif %}
-        {% include component/sw.html %}
-        {% include component/customCssJS.html %}
-        {% include footer/footer.html %}
+        {% include components/sw.html %}
+        {% include components/customCssJS.html %}
+        {% include footer.html %}
         {% if site.data.site.uiux.meng == true%}
             {% if site.data.meng.live2d.switch == true %}
                 {% include meng/live2d.html %}

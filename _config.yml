@@ -1,15 +1,114 @@
 title: "Jekyll-Theme-MDUI"
 description: "A Jekyll theme based on MDUI"
-url: 
-baseurl: ""
-author: "KeJun"
+url: '' # your website url
+baseurl: "" # remember do not add /
+author: "mdui"
+avatar: https://your.author.avatar.path.here
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
+
+headbar: 
+   favicon: "https://ooo.0o0.ooo/2017/05/27/59294212bc16e.png" #  the website favicon
+   high_res_favicon: "https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png" #  the favicon using high quality format
+   apple_touch_icon: "https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png" # the iOS Home button icon
+   keywords: "blog jekyll mdui theme" #  the site keywords
+   theme_color: "#eeeeee" #  the color of the Chrome address bar and the navbar
+   nprogress_color: "#29d" #  the color of the top loading progress bar
+   nprogress_buffer: 200 # the top loading progress bar buffers
+
+category:
+   'Category.name1': 'https://category.avatar.image.url'
+   'Category.name2': 'https://category.avatar.image.url'
+
+sns_share:
+   twitter: 'true'
+   facebook: 'true'
+   googleplus: 'true'
+   weibo: 'true'
+   linkedin: 'true'
+   qq: 'true'
+   telegram: 'true'
+
+card_hoverable: false # When the hover to deepen the shadow
+
+friends:
+   - name: 'Name1'
+     url: 'https://friend.url'
+     avatar: 'https://friend.avatar.image.url'
+     desc: 'Describe the friend Name1'
+   - name: 'Name2'
+     url: 'https://friend.url'
+     avatar: 'https://friend.avatar.image.url'
+     desc: 'Describe the friend Name2'
+
+navbar:
+   - name: 'Home'
+     url: '/'
+     icon: 'home'
+   - name: 'Tags'
+     url: '/tags'
+     icon: "&#xe893;"
+   - name: 'Categories'
+     url: '/category'
+     icon: "&#xe53b;"
+   - name: 'Friends'
+     url: '/friends'
+     icon: "&#xe8a3;"
+   - name: 'navSearch'
+   - switch: true
+
+background: '' # background image
+
+comment:
+  used: "" # disqus,livere,gitment,valine
+  # disqus config
+  disqus_shortname: "" # Your disqus 
+  disqus_button: true # disqus load button
+  disqus_proxy: false # # disqus proxy(Do not use)
+  disqus_proxy_url: "" # (Do not use)
+  disqus_api_key: "" # (Do not use)
+  # livere config
+  livere_type: 'city'
+  livere_data_uid: ''
+  # gitment config
+  owner: ""
+  repo: ""
+  client_id: ""
+  client_secret: ""
+  #valine config
+  valine_notify: false #mail notifier
+  valine_verify: false #validation code
+  valine_app_id: ''
+  valine_app_key: ''
+  valine_placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!"
 
 plugins:
-  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
+
+mathjax: true
+
+google_analytics: ""  # google analytics code
+
+baidu_site_verification: ""  # baidu site verification code
+
+google_site_verification: ""  # google search console verification code
+
+baidu_auto_push: false  # if you used baidu auto push to commit links
+
+lang: ""  # lang
+
+deploy: "" # type 'coding' or 'github', your website deployer.
+
+custom_css: "" # Use the assets/css/customCss.css
+
+custom_js: "" # Use the assets/js/customJS.js
+
+prism:
+  themes: prism-okaidia
+  components: 
+    - bash 
+  plugins: 
 
 exclude:
   - package.json
