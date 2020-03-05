@@ -8,9 +8,10 @@ permalink: /friends/
 }
 </style>
 <div class="k-posts-list"></div>
+<br>
 <div class="mdui-container">
     <div class="mdui-row-sm-2 mdui-row-md-4">
-        {% for f in site.data.friends %}
+        {% for f in site.friends %}
         <div class="mdui-col">
             <a class="k-friend" href="{{f.url}}" target="_blank">
             <div class="mdui-card mdui-hoverable">

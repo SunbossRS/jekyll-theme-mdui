@@ -23,14 +23,6 @@ title: 403
 .k-noimg{
   padding-left: 16px;
 }
-.k-noimg h1::before{
-    color: #FF5151 ;
-    content: "- - -";
-}
-.k-noimg h1::after{
-    color: #FF5151 ;
-    content: "- - -";
-}
 .k-noimg h1:before,.k-noimg h1:after{
     display: block;
     font-size: 30px;
@@ -51,20 +43,18 @@ margin-right: 12px;
 }
 </style>
 
-<div class="mdui-row-md-4 mdui-row-sm">
-    <div class="mdui-col">
-    <div class="animated bounceIn mdui-card k-list-card mdui-shadow-{{site.data.site.card.card_shadow}} {% if site.data.site.card.card_hoverable == true%}mdui-hoverable{% endif %}">
+<div>
+    <div class="mdui-card mdui-hoverable mdui-shadow-3 mdui-hoverable">
        <div class="mdui-card-media mdui-ripple k-post-media mdui-valign k-noimg">
-           <h1>{{ lang.error.main }} </a> <br /> <br /> <span class="mdui-text-color-blue">{{ lang.error.403x }}</span> </h3>
+           <h1>403 Forbidden.</h1>
        </div>
-    </div>
-    </div>
-    <div class="mdui-card-header k-head-card-content">
+    <div class="mdui-card-header mdui-card k-head-card-content">
     <a style="color: #000000; text-decoration: none;" href="{{ "/" | prepend: site.baseurl }}">
     <div class="mdui-card-header-title">
-    <i style="font-style: normal;" class="material-icons">keyboard_arrow_right</i> 回到主页
+        <i style="font-style: normal;" class="material-icons">keyboard_arrow_right</i> 回到主页
     </div>
     </a>
+    </div>
     </div>
 
 </div>

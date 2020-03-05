@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
+
 <div class="k-container">
     <div class="k-posts-list"></div>
            <div class="head_card-offset"></div>
+          <br><br>
         {% if paginator.page == 1 %}
-            {% include meng/head_card.html %}
+            {% include head_card.html %}
         {% endif %}
 
     {% include paginator_post_list.html %}

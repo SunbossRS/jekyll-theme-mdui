@@ -1,8 +1,3 @@
-{% if site.data.site.lang == null or site.data.site.lang == "" %}
-{% assign lang = site.data.lang.en-US %}
-{% else %}
-{% assign lang = site.data.lang[site.data.site.lang] %}
-{% endif %}
 <style>
 .k-lastupdate{
     color: #000000;
@@ -29,7 +24,7 @@ var date3=date2.getTime()-date1;
 var days=Math.floor(date3/(24*3600*1000));
 
 if (days>= 100){
-    $('#k-difference').html("{{lang.lastupdate.one}} "+ days +" {{lang.lastupdate.two}}");
+    $('#k-difference').html("本文最后更新于 "+ days +" 天前，文中所描述的信息可能已发生改变，请谨慎使用。");
 }else{
     $('#k-difference').hide();
 }

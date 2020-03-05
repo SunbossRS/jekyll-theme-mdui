@@ -6,13 +6,14 @@ author: "mdui"
 avatar: https://your.author.avatar.path.here
 paginate: 5
 paginate_path: "/page:num/"
+headercard_left: /assets/images/jekylltheme.jpg
 
 headbar: 
    favicon: "https://ooo.0o0.ooo/2017/05/27/59294212bc16e.png" #  the website favicon
    high_res_favicon: "https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png" #  the favicon using high quality format
    apple_touch_icon: "https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png" # the iOS Home button icon
    keywords: "blog jekyll mdui theme" #  the site keywords
-   theme_color: "#eeeeee" #  the color of the Chrome address bar and the navbar
+   theme_color: "orange" #  the color of the Chrome address bar and the navbar, indigo/red/pink/purple/deep-purple/blue/light-blue/cyan/teal/green/light-green/lime/yellow/amber/orange/deep-orange/brown/grey/blue-grey
    nprogress_color: "#29d" #  the color of the top loading progress bar
    nprogress_buffer: 200 # the top loading progress bar buffers
 
@@ -29,33 +30,37 @@ sns_share:
    qq: 'true'
    telegram: 'true'
 
-card_hoverable: false # When the hover to deepen the shadow
-
 friends:
-   - name: 'Name1'
-     url: 'https://friend.url'
-     avatar: 'https://friend.avatar.image.url'
-     desc: 'Describe the friend Name1'
-   - name: 'Name2'
-     url: 'https://friend.url'
-     avatar: 'https://friend.avatar.image.url'
-     desc: 'Describe the friend Name2'
+   - name: 'mdui官网'
+     url: 'https://mdui.org'
+     avatar: 'about:blank'
+     desc: '这个网站的CSS！'
+   - name: 'KeJun'
+     url: 'https://blog.kejun.me/'
+     avatar: 'https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png'
+     desc: '二次元智障'
+
+cute:
+   enable: true
+   live2d: false
+   music: true
+   music_player: aplayer
+   music_netease_id: 1422198842
+   music_netease_type: song # song, playlist, album, search, artist
 
 navbar:
-   - name: 'Home'
+   - name: '主页'
      url: '/'
      icon: 'home'
-   - name: 'Tags'
+   - name: '标签'
      url: '/tags'
      icon: "&#xe893;"
-   - name: 'Categories'
+   - name: '分类'
      url: '/category'
      icon: "&#xe53b;"
-   - name: 'Friends'
+   - name: '友情链接'
      url: '/friends'
      icon: "&#xe8a3;"
-   - name: 'navSearch'
-   - switch: true
 
 background: '' # background image
 
@@ -96,7 +101,7 @@ google_site_verification: ""  # google search console verification code
 
 baidu_auto_push: false  # if you used baidu auto push to commit links
 
-lang: ""  # lang
+lang: "zh"  # lang zh/en
 
 deploy: "" # type 'coding' or 'github', your website deployer.
 

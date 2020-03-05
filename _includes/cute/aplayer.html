@@ -1,0 +1,22 @@
+{% assign aplayer = site.cute %}
+<style>
+    @media screen and (max-width: 600px){
+        .k-music-card{
+            transform:translateX(-250px)
+        }
+    }
+
+</style>
+<div id="aplayer"></div>
+<div class="k-music-btn"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<meting-js
+	id="{{ aplayer.music_netease_id}}"
+	server="netease"
+	order="list"
+	type="{{ aplayer.music_netease_type}}"
+	fixed="true"
+	list-olded="true">
+</meting-js>

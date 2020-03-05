@@ -1,8 +1,9 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
-<html lang="{{site.data.site.lang}}">
+<html lang="{{site.lang}}">
     {% include head.html %}
     <body>
         {% include components/totop.html %}
@@ -21,29 +22,20 @@ layout: compress
         {% include components/sw.html %}
         {% include components/customCssJS.html %}
         {% include footer.html %}
-        {% if site.data.site.uiux.meng == true%}
-            {% if site.data.meng.live2d.switch == true %}
-                {% include meng/live2d.html %}
+        {% if site.cute.enable == true%}
+         {% if site.cute.live2d == true%}
+           {% include cute/live2d.html %}
+         {% endif %}
+           {% include cute/title.html %}
+           {% include cute/cursor.html %}
+           {% include cute/console.html %}
+           {% include cute/background.html %}
+           {% include cute/card.html %}
+            {% if site.cute.music_player == "cplayer" %}
+                {% include cute/cplayer.html %}
             {% endif %}
-            {% if site.data.meng.title.switch == true %}
-                {% include meng/title.html %}
-            {% endif %}
-            {% if site.data.meng.cursor.switch == true %}
-                {% include meng/cursor.html %}
-            {% endif %}
-            {% if site.data.meng.console.switch == true %}
-                {% include meng/console.html %}
-            {% endif %}
-            {% if site.data.meng.background.switch == true %}
-                {% include meng/background.html %}
-            {% endif %}
-            {% if site.data.meng.card.switch == true %}
-                {% include meng/card.html %}
-            {% endif %}
-            {% if site.data.meng.music_player.player == "cplayer" %}
-                {% include meng/cplayer.html %}
-            {% elsif  site.data.meng.music_player.player == "aplayer"%}
-                {% include meng/aplayer.html %}
+            {% if site.cute.music_player == "aplayer"%}
+                {% include cute/aplayer.html %}
             {% endif %}
         {% endif %}
     </body>

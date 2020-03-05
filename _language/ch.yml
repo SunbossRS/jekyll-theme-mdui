@@ -1,0 +1,44 @@
+head_card: 
+   rss: "订阅"
+   sitemap: "站点地图"
+
+editor: 
+   content: "内容"
+   frontmatter:
+      name: "Front Matter"
+      title: "标题"
+      date: "日期"
+      categories: "分类"
+      tags: "标签"
+      image: "图像"
+      preview: "预览"
+      download: "下载"
+
+search: "搜索"
+no_results: '没有你要搜的结果。'
+results_title: "搜索结果"
+
+post:
+   continue: "阅读全文"
+   qrcode: "二维码"
+   qrcodeContent: "在其它设备中阅读本文章"
+   comments_load:
+      disqus: "阅读评论 「请确保 Disqus 可以正常加载」"
+      gitalk: "查看Gitalk评论"
+      vssue: "查看Vssue评论"
+      livere: "查看来必力评论"
+   tags: "标签"
+   share:
+      share: "分享"
+      toWeibo: "分享到 微博"
+      toTwitter: "分享到 Twitter"
+      toFacebook: "分享到 Facebook"
+      toGoogleplus: "分享到 G+"
+      toLinkedin: "分享到 Linkedin"
+      toQq: "分享到 QQ"
+      toTelegram: "分享到 Telegram"
+
+error:
+   main: "网站出现了错误。"
+   404x: "404未找到"
+   403x: "403资源不可用"

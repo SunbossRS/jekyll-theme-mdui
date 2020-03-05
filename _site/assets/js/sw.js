@@ -80,6 +80,8 @@ var urlsToCache = [
   
     '/assets/css/customCss.css',
   
+    '/assets/images/jekylltheme.jpg',
+  
     '/assets/images/touch/apple-touch-icon.png',
   
     '/assets/images/touch/chrome-touch-icon-192x192.png',
