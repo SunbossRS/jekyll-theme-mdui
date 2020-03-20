@@ -79,7 +79,7 @@ transform: translateY(0);
         {% endfor %}
         </div>
         <div class="mdui-textfield k-navsearch-btn mdui-textfield-expandable">
-            <button class="mdui-textfield-icon k-navsearch-open mdui-btn mdui-btn-icon"><i class="mdui-list-item-icon mdui-icon material-icons">&#xe8b6;</i></button>
+            <button class="mdui-textfield-icon k-navsearch-open mdui-btn mdui-btn-icon" id="searchbtn"><i class="mdui-list-item-icon mdui-icon material-icons">&#xe8b6;</i></button>
             <div class="typeahead__container">
                 <div class="typeahead__field">
                     <span class="typeahead__query">
@@ -87,17 +87,37 @@ transform: translateY(0);
                     </span>
                 </div>
             </div>
-            <button class="mdui-textfield-close k-navsearch-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5cd;</i></button>
+            <button class="mdui-textfield-close k-navsearch-close mdui-btn mdui-btn-icon" id="searchclose"><i class="mdui-icon material-icons">&#xe5cd;</i></button>
         </div>
         </div>
     </div>
 </header>
 
-<div id="resultsbox">
-   <div class="mdui-dialog-title">搜索结果</div>
-   <br>
-   <ul id="search_result"></ul>
-</div>
+<script>
+var $$ = mdui.JQ;
+
+$$('#searchbtn').on('click', function () {
+  mdui.snackbar({
+    message: '<div class="mdui-dialog-title">搜索结果</div><br><ul id="search_result" class="mdui-typo"></ul>',
+    position: 'right-bottom',
+    timeout: 20000 ,
+    closeOnOutsideClick: false
+    buttonText: '关闭',
+  });
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('searchbar'),
+    resultsContainer: document.getElementById('search_result'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}">{title}</li>', 
+    noResultsText: '没有结果。', 
+    limit: 10, 
+    fuzzy: false
+  });
+});
+
+
+   
+</script>
 
 <div class="mdui-drawer mdui-drawer-close" id="k-menu">
     <div class="mdui-textfield">
@@ -153,13 +173,5 @@ html:t("<a/>",{href:"javascript:;",html:s,click:function(t){t.preventDefault(),i
 </script>
 <script src="{{ '/assets/js/jekyllsimsearch.js' | prepend: site.baseurl}}"></script>
 <script>
-   SimpleJekyllSearch({
-    searchInput: document.getElementById('searchbar'),
-    resultsContainer: document.getElementById('search_result'),
-    json: '/search.json',
-    searchResultTemplate: '<a href="{url}">{title}</a><br>', 
-    noResultsText: '没有结果。', 
-    limit: 20, 
-    fuzzy: false 
-  })
+
 </script>
