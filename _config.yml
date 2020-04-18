@@ -7,6 +7,7 @@ avatar: https://your.author.avatar.path.here
 paginate: 5
 paginate_path: "/page:num/"
 headercard_left: /assets/images/jekylltheme.jpg
+headercard_right:
 
 headbar: 
    favicon: "https://ooo.0o0.ooo/2017/05/27/59294212bc16e.png" #  the website favicon
@@ -45,7 +46,7 @@ cute:
    live2d: false
    music: true
    music_player: aplayer
-   music_netease_id: 1422198842
+   music_netease_id: 34179273
    music_netease_type: song # song, playlist, album, search, artist
 
 navbar:
@@ -55,9 +56,6 @@ navbar:
    - name: '标签'
      url: '/tags'
      icon: "&#xe893;"
-   - name: '分类'
-     url: '/category'
-     icon: "&#xe53b;"
    - name: '友情链接'
      url: '/friends'
      icon: "&#xe8a3;"

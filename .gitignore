@@ -1,4 +1,5 @@
 *.gem
+.github
 .bundle
 .sass-cache
 _site

@@ -11,10 +11,6 @@ var urlsToCache = [
     
   
     
-      '/category/',
-    
-  
-    
       '/editor/',
     
   
@@ -28,6 +24,10 @@ var urlsToCache = [
   
     
       '/',
+    
+  
+    
+      '/search',
     
   
     

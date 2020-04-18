@@ -1,0 +1,34 @@
+---
+layout: default
+permalink: search
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="mdui-container mdui-typo">
+	<p>点击下方的搜索按钮展开搜索栏并进行搜索...</p>
+	<div class="mdui-textfield mdui-textfield-expandable">
+		<button class="mdui-textfield-icon mdui-btn mdui-btn-icon" id="searchbtn"><i class="mdui-list-item-icon mdui-icon material-icons">&#xe8b6;</i></button>
+		<div class="typeahead__container typeahead__field typeahead__query">
+			<input class="mdui-textfield-input k-nav-search" id="searchbar" type="text" placeholder="搜索">
+		</div>
+	</div>
+	<br>
+	<ul id="results"></ul>
+</div>
+
+<script src="{{ '/assets/js/jekyllsimsearch.js' | prepend: site.baseurl }}"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('searchbar'),
+    resultsContainer: document.getElementById('results'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}">{title}</a></li>', 
+    noResultsText: '没有结果。', 
+    limit: 20, 
+    fuzzy: false
+  });
+</script>
