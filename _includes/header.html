@@ -60,7 +60,7 @@
         <div class="mdui-hidden-xs-down">
             <div class="k-header-menus" id="k-menus">
         {% for menu in site.navbar %}
-        <a href="{{menu.url | prepend: site.baseurl }}" class="mdui-btn mdui-ripple {% if menu.url  == page.url %}mdui-list-item-active{% endif %}">{{menu.name}}</a>
+        <a href="{{menu.url | prepend: site.baseurl}}" class="mdui-btn mdui-ripple {% if menu.url  == page.url %}mdui-list-item-active{% endif %}">{{menu.name}}</a>
         {% endfor %}
         </div>
         <div class="mdui-textfield k-navsearch-btn mdui-textfield-expandable">
