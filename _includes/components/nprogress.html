@@ -7,18 +7,18 @@ $(document).ready(function () {
 });
 NProgress.start();
 $('#nprogress .bar').css({
-    'background': '{{site.data.site.uiux.nprogress_color}}'
+    'background': '{{site.headbar.nprogress_color}}'
 });
 $('#nprogress .peg').css({
-    'box-shadow': '0 0 10px {{site.data.site.uiux.nprogress_color}}, 0 0 15px {{site.data.site.uiux.nprogress_color}}'
+    'box-shadow': '0 0 10px {{site.headbar.nprogress_color}}, 0 0 15px {{site.headbar.nprogress_color}}'
 });
 $('#nprogress .spinner-icon').css({
-    'border-top-color': '{{site.data.site.uiux.nprogress_color}}',
+    'border-top-color': '{{site.headbar.nprogress_color}}',
     'border-left-color': '{{site.data.site.uiux.nprogress_color}}'
 });
-setTimeout(function() {
+setTimeout(function() {{{site.headbar.nprogress_color}}
     NProgress.done();
-},{{site.data.site.uiux.nprogress_buffer}});
+},{{site.headbar.nprogress_buffer}});
     
 });
 
