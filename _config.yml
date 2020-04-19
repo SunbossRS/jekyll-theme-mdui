@@ -41,7 +41,7 @@ friends:
    - name: 'mdui官网'
      url: 'https://mdui.org'
      avatar: 'about:blank'
-     desc: '这个网站的CSS！'h
+     desc: '这个网站的CSS！'
    - name: 'KeJun'
      url: 'https://blog.kejun.me/'
      avatar: 'https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png'
@@ -107,7 +107,7 @@ baidu_auto_push: false  # if you used baidu auto push to commit links
 
 lang: "zh"  # lang zh/en
 
-deploy: "" # type 'coding' or 'github', your website deployer.
+deploy: "github" # type 'coding' or 'github', your website deployer.
 
 custom_css: "" # Use the assets/css/customCss.css
 
