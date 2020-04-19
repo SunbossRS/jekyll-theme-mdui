@@ -32,11 +32,10 @@ sns_share:
    telegram: 'true'
 
 sns:
-   qq: '100001'
-   twitter: ''
-   facebook: ''
-   github: 'https://github.com/kejunmao'
-
+   - name: 'github'
+     url: 'https://github.com/sunbossrs'
+   - name: 'bilibili'
+     url: 'https://space.bilibili.com/204437680'
 
 friends:
    - name: 'mdui官网'
