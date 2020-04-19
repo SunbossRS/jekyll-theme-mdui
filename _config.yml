@@ -31,11 +31,18 @@ sns_share:
    qq: 'true'
    telegram: 'true'
 
+sns:
+   qq: '100001'
+   twitter: ''
+   facebook: ''
+   github: 'https://github.com/kejunmao'
+
+
 friends:
    - name: 'mdui官网'
      url: 'https://mdui.org'
      avatar: 'about:blank'
-     desc: '这个网站的CSS！'
+     desc: '这个网站的CSS！'h
    - name: 'KeJun'
      url: 'https://blog.kejun.me/'
      avatar: 'https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png'
