@@ -4,7 +4,7 @@
 
 > A Jekyll theme based on mdui
 
-> 主题停更，只做兼容性维护。期待 V2 吧！
+> SunbossRS分支修改版
 
 ## Contents
 
