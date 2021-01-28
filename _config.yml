@@ -1,12 +1,12 @@
 title: "Jekyll-Theme-MDUI"
 description: "A Jekyll theme based on MDUI"
 url: '' # your website url
-baseurl: "" # remember to add /
+baseurl: "jekyll-theme-mdui" # remember not to add /
 author: "mdui"
 avatar: https://your.author.avatar.path.here
 paginate: 5
 paginate_path: "/page:num/"
-headercard_left: /assets/images/jekylltheme.jpg
+headercard_left: assets/images/jekylltheme.jpg
 headercard_right:
 
 headbar: 
@@ -41,7 +41,7 @@ friends:
    - name: 'mdui官网'
      url: 'https://mdui.org'
      avatar: 'about:blank'
-     desc: '这个网站的CSS！'
+     desc: '此博客网站CSS'
    - name: 'KeJun'
      url: 'https://blog.kejun.me/'
      avatar: 'https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png'
