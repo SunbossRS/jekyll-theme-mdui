@@ -55,16 +55,16 @@
 <header mdui-headroom class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-color-{{ site.headbar.theme_color }} mdui-shadow-4">
     <div class="mdui-toolbar">
         <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-hidden-sm-up" mdui-drawer="{target: '#k-menu'}"><i class="mdui-icon material-icons">&#xe5d2;</i></a>
-        <a href="{{ site.url | prepend: site.baseurl }}" class="mdui-typo-title">{{site.title |upcase }}</a>
+        <a href="{{ "/" | prepend: site.baseurl }}" class="mdui-typo-title">{{site.title |upcase }}</a>
         <div class="mdui-toolbar-spacer"></div>
         <div class="mdui-hidden-xs-down">
             <div class="k-header-menus" id="k-menus">
         {% for menu in site.navbar %}
-        <a href="{{ menu.url }}" class="mdui-btn mdui-ripple {% if menu.url  == page.url %}mdui-list-item-active{% endif %}">{{menu.name}}</a>
+        <a href="{{ "/" | prepend: site.baseurl }}" class="mdui-btn mdui-ripple {% if menu.url  == page.url %}mdui-list-item-active{% endif %}">{{menu.name}}</a>
         {% endfor %}
         </div>
         <div class="mdui-textfield k-navsearch-btn mdui-textfield-expandable">
-            <a href="{{ '/search.html' | prepend: site.baseurl }}" style="color: #000;"><button class="mdui-textfield-icon k-navsearch-open mdui-btn mdui-btn-icon" id="searchbtn"><i class="mdui-list-item-icon mdui-icon material-icons">&#xe8b6;</i></button></a>
+            <a href="{{ '/search.html' | prepend: site.baseurl | prepend: "/" }}" style="color: #000;"><button class="mdui-textfield-icon k-navsearch-open mdui-btn mdui-btn-icon" id="searchbtn"><i class="mdui-list-item-icon mdui-icon material-icons">&#xe8b6;</i></button></a>
             <div class="typeahead__container">
                 <div class="typeahead__field">
                     <span class="typeahead__query">
@@ -81,7 +81,7 @@
 
 
 <div class="mdui-drawer mdui-drawer-close" id="k-menu">
-<a href="{{ '/search' | prepend: site.baseurl }}">
+<a href="{{ '/search' | prepend: site.baseurl | prepend: "/" }}">
     <div class="mdui-textfield">
         <div class="typeahead__container">
             <div class="typeahead__field">
@@ -94,7 +94,7 @@
      </div>
 </a>
         {% for menu in site.navbar %}
-        <a href="{{ menu.url | prepend: site.baseurl | "/" }}" class="mdui-list-item mdui-ripple {% if menu.url == page.url %}mdui-list-item-active{% endif %}" style="color: #000;">
+        <a href="{{ menu.url | prepend: site.baseurl | prepend: "/" }}" class="mdui-list-item mdui-ripple {% if menu.url == page.url %}mdui-list-item-active{% endif %}" style="color: #000;">
             <i class="mdui-list-item-icon mdui-icon material-icons">{{menu.icon}}</i>
             <div class="mdui-list-item-content">{{menu.name}}</div>
         </a>
